@@ -597,8 +597,17 @@ footer .credit a {
   }
 }
 /* Mobile Phone */
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
   }
 }
