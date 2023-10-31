@@ -601,4 +601,13 @@ footer .credit a {
   html {
     font-size: 55%;
   }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 15rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
   }
