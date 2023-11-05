@@ -41,30 +41,37 @@ document.addEventListener("click", function (e) {
   }
 });
 
-
 // Modal Box
-const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButtons = document.querySelectorAll('.item-detail-button');
+const itemDetailModal = document.querySelector("#item-detail-modal");
+const itemDetailButtons = document.querySelectorAll(".item-detail-button");
 
-itemDetailButtons.forEach((btn) =>{
- 
+itemDetailButtons.forEach((btn) => {
   btn.onclick = (e) => {
-    itemDetailModal.style.display = 'flex';
+    itemDetailModal.style.display = "flex";
     e.preventDefault();
-  
   };
-
-})
+});
 
 //klik tombol close
-document.querySelector('.modal .close-icon').onclick = (e)=>{
-  itemDetailModal.style.display = 'none';
+document.querySelector(".modal .close-icon").onclick = (e) => {
+  itemDetailModal.style.display = "none";
   e.preventDefault();
 };
 
 //klik diluar modal
-window.onclick = (e) =>{
+window.onclick = (e) => {
   if (e.target === itemDetailModal) {
-    itemDetailModal.style.display = 'none';
+    itemDetailModal.style.display = "none";
   }
-}
+};
+
+// const navbar = document.querySelector(".navbar");
+// const offcanvas = document.querySelector(".offcanvas");
+
+// navbar.addEventListener("click", function () {
+//   navbar.style.overflow = "hidden";
+// });
+
+// offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+//   stickyTop.style.overflow = "hidden";
+// });
